@@ -5,7 +5,6 @@ CREATE TABLE "Titles" (
         "title_id"
      )
 );
-
 CREATE TABLE "Employees" (
     "emp_no" INT   NOT NULL,
     "emp_title_id" VARCHAR   NOT NULL,
@@ -18,7 +17,6 @@ CREATE TABLE "Employees" (
         "emp_no"
      )
 );
-select * from "Employees";
 CREATE TABLE "Departments" (
     "dept_id" VARCHAR   NOT NULL,
     "dept_name" VARCHAR   NOT NULL,
@@ -26,7 +24,6 @@ CREATE TABLE "Departments" (
         "dept_id"
      )
 );
-
 CREATE TABLE "Dept_Manager" (
     "dept_id" VARCHAR   NOT NULL,
     "emp_no" INT   NOT NULL,
@@ -34,7 +31,6 @@ CREATE TABLE "Dept_Manager" (
         "dept_id","emp_no"
      )
 );
-
 CREATE TABLE "Dept_emp" (
     "emp_no" INT   NOT NULL,
     "dept_id" VARCHAR   NOT NULL,
@@ -42,7 +38,6 @@ CREATE TABLE "Dept_emp" (
         "emp_no","dept_id"
      )
 );
-
 CREATE TABLE "Salaries" (
     "emp_no" INT   NOT NULL,
     "salary" INT   NOT NULL,
